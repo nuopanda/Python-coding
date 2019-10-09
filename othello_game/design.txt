@@ -1,0 +1,104 @@
+data structure: nest list
+classes: GameManager, Tile, Background
+
+othello_game_starter.py
+game_manager=GameManager()
+def setup():
+  # draw the background lines
+  size(WIDTH,HEIGHT)
+  background(0,128,0)
+  game_manager.background.background_display()
+  player_turn=True
+
+def draw():
+  # draw the current tiles, display ending if the game is ended
+  game_manager.draw_current_board()
+
+def mousePressed():
+  # flip the tile if mouse is pressed, do AI's job
+  if mousePressed:
+    x=mouseX
+    y=mouseY
+    if player_turn:
+      text(display a message to show it's player's turn)
+      if not game_manager.is_valid_tile_to_place(TileState.PLAYER):
+        # do nothing
+      else:
+        game_manager.flip_tile(TileState.PLAYER, x, y)
+    if AI's turn:
+      ai_x, ai_y = game_manager.find_a_valid_tile_for_ai()
+      game_manager.flip_tile(TileState.AI, ai_x, ai_y)
+
+
+game_manager.py
+class GameManager:
+  # GameManager is the game controller
+  import BackGround
+  import Tile
+
+  def __init__():
+    # the background board of the game.
+    self.background=BackGround()
+    # a matrix of tiles, initialized with the same color as the background.
+    self.build_tile_matrix()
+
+  def build_tile_matrix():
+    # initialize a matrix (nest list) of Tile objects
+      Tile[][] tile_grid
+
+  def draw_current_board():
+    # draw current matrix of tiles
+    # check if the game is ended, display the ending message
+    for tile in self.tile_grid:
+      tile.display()
+    if game_manager.is_game_ended():
+      game_manager.display_game_ending()
+ 
+  def is_game_ended();
+    # to check if the game is ended.
+
+ 
+  def is_valid_tile_to_place(tile_state, row, col):
+    # check if a player (human or AI) can place a tile of TileState on (row, col)
+
+  
+  def display_game_ending():
+    # display some game ending messages.
+    # if the play wins, open file, write the player's name
+  
+  
+  def flip_tile(tile_state, row, col):
+    # check eight directions
+    # flip the color of the tile based on the player type
+
+ 
+  def find_a_valid_tile_for_ai():
+    # find a valid next tile for AI to place. 
+    # It can be done by randomly select a valid tile, or use some heuristic to find an optimal next tile.
+
+
+tile.py
+class Tile:
+  import State
+
+  def __init__():
+  # the state of current tile, which can be identified as a background, player or AI tile.
+  self.current_state=State()
+  
+  
+  def display():
+  # display this tile
+  ellipse()
+
+  
+  def changeState(tile_state):
+  # change the self.current_state to the tile_state
+
+background.py
+class BackGround:
+  # display background 
+
+  def background_display():
+  # draw the line of the background
+
+

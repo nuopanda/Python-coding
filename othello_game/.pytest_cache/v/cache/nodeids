@@ -1,0 +1,19 @@
+[
+  "board_test.py::test_constructor",
+  "game_manager_test.py::test_constructor_build_tile_matrix",
+  "game_manager_test.py::test_is_on_board",
+  "game_manager_test.py::test_is_valid_tile_to_place",
+  "game_manager_test.py::test_get_all_valid_moves",
+  "game_manager_test.py::test_get_max_count_move_AI",
+  "game_manager_test.py::test_get_fake_tile_grid",
+  "game_manager_test.py::test_get_count",
+  "game_manager_test.py::test_have_remaining_value_move",
+  "game_manager_test.py::test_flip_tle",
+  "game_manager_test.py::test_is_have_background_move",
+  "game_manager_test.py::test_is_game_ended",
+  "game_manager_test.py::test_is_any_move_available",
+  "game_manager_test.py::test_player_move",
+  "game_manager_test.py::test_ai_move",
+  "tile_test.py::test_constructor",
+  "tile_test.py::test_change_state"
+]

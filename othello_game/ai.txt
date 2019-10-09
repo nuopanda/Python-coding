@@ -1,0 +1,12 @@
+I tried to make the computer player very smart. Overall, the performance of the computer player is as smart as I would like.
+My AI basically obeys the following algorithms:
+	1. Should be a valid position to place white tiles (the current_state of the tile should be "BACKGROUND")
+	2. If the current_state of the tile is changed to "AI", after flipping, the computer should have the maximum score
+	3. If multiple position can achieve the maximum score, we will pick the one on the edge of the board
+If the board is large enough (such as 6x6 and 8x8), the computer always wins the game.
+Future direction:
+	Currently, the AI can achieve the maximum score for its turn. But it cannot predict what is the player's next move. Thus, it cannot guarantee that its move is the most smartest one. 
+	To solve the problem, we observed that the one who places as many as tiles on the edges of the board will be more likely to win the game. Thus, in the situation of having the same 
+	maximum score, we will pick the position to place tiles if the col or row is on the edges of the board. To further improve the AI's performance, we should think more about its ability 
+	to predict the player's move, and use the heuristic algorithm.
+
